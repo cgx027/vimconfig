@@ -144,7 +144,7 @@ set pastetoggle=<F12>
 au InsertLeave * set nopaste
 
 " Map ; to : to quickly enter command line, this will save a million keystrokes
-nnoremap ; :
+" nnoremap ; :
 
 " Map space to page down
 nnoremap <space> <C-D>
