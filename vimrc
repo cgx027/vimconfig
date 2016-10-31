@@ -839,6 +839,7 @@ let g:tcommentMaps = 0
 " Comment one line
 nnoremap <leader>cl :TComment<cr>
 vnoremap <leader>cl :TComment<cr>
+map <C-_> :TComment<cr>
 
 " Comment block, only useful on visual mode
 vnoremap <leader>cb :TCommentBlock<cr>
