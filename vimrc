@@ -410,6 +410,8 @@ map <leader>wl :wincmd l<cr>
 map <leader>wq :wincmd q<cr>
 map <leader>ww :wincmd w<cr>
 " nnoremap ww :wincmd w<cr>
+map <C-n> :wincmd w<cr>
+map <C-e> :wincmd q<cr>
 
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <leader>wz :ZoomToggle<CR>
@@ -505,6 +507,7 @@ nmap <F7> :!./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --r
 " => Plugin: NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>n :NERDTreeToggle<CR>:set number<CR>:set relativenumber<CR>
+map <C-g> :NERDTreeToggle<CR>:set number<CR>:set relativenumber<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$', '^\.svn$', '^\.hg$' ]
 "close vim if the only window left open is a NERDTree
