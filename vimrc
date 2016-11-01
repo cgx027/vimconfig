@@ -173,7 +173,7 @@ nnoremap 'f <C-I>
 inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
-inoremap <C-l> <C-o>l
+inoremap <C-l> <C-o>a
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
