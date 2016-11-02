@@ -210,6 +210,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" no anoyying beaping on every key pressing
+set belloff=all
+
 " Show matching brackets when text indicator is over them
 set showmatch
 " How many tenths of a second to blink when matching brackets
