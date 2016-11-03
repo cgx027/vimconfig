@@ -1133,7 +1133,8 @@ let g:qfenter_topen_map = ['<Leader>xt']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin: cosco
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <F9> :AutoCommaOrSemiColonToggle<CR>
+let g:auto_comma_or_semicolon = 1     " Default : 0
+nmap <F9> :call AutoCommaOrSemiColon()<CR>
 nmap <silent> <Leader>; <Plug>(cosco-commaOrSemiColon)
 imap <silent> <Leader>; <c-o><Plug>(cosco-commaOrSemiColon)
 
