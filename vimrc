@@ -105,7 +105,12 @@ Plugin 'elzr/vim-json'
 " Plugin 'vim-scripts/Nibble'
 " Plugin 'vim-scripts/genutils'
 Plugin 'powerman/vim-plugin-AnsiEsc'
+
+" Add the other part of the {}[]() pair.
 Plugin 'autoclose'
+
+" Add semicolon at the end of the line using ,; key
+Plugin 'lfilho/cosco.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -129,6 +134,9 @@ set autoread
 " like <leader>w saves the current file
 let mapleader = ","
 let g:mapleader = ","
+
+" Remap reward search key
+noremap " ,
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -1121,6 +1129,13 @@ let g:qfenter_vopen_map = ['<Leader>xv']
 let g:qfenter_hopen_map = ['<Leader>xh']
 let g:qfenter_topen_map = ['<Leader>xt']
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin: cosco
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <F9> :AutoCommaOrSemiColonToggle<CR>
+nmap <silent> <Leader>; <Plug>(cosco-commaOrSemiColon)
+imap <silent> <Leader>; <c-o><Plug>(cosco-commaOrSemiColon)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
