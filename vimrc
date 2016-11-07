@@ -136,7 +136,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Remap reward search key
-noremap " ,
+" noremap " ,
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -654,7 +654,7 @@ nmap <leader>fp <Plug>CtrlSFCwordPath
 " let g:ctrlsf_winsize = '30%'
 let g:ctrlsf_auto_close = 0
 let g:ctrlsf_confirm_save = 0
-let g:ctrlsf_default_root = 'cwd'
+let g:ctrlsf_default_root = 'project'
 let g:ctrlsf_context = '-C 2'
 let g:ctrlsf_position = 'bottom'
 
