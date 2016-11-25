@@ -516,7 +516,7 @@ noremap <Leader>~m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Format JSON by json.tool
 "nmap <C-J> :%!python -m json.tool<CR>:setfiletype json<CR>
-nmap <F6> :!mocha -R spec --require spec/helper.js %:p<CR>
+nmap <F6> :!sudo mocha -R spec --require spec/helper.js %:p<CR>
 nmap <F7> :!./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require spec/helper.js %:p<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
