@@ -56,6 +56,12 @@ You will also need to setup a tern config file if you used --tern-complete in ab
     cp ~/dotfiles/files/tern-config ~/.tern-config
     # Need to change paths inside .tern-config if dotfiles repo is not under home directory
 
+7. Notes and bug fixes
+
+* Error: Cannot find module '/home/onrack/.vim/bundle/tern_for_vim/node_modules/tern/bin/tern'
+Tern server fail to start. Reference: https://github.com/ternjs/tern_for_vim/issues/88
+Fix: cd ~/.vim/bundle/tern_for_vim/ && npm install
+
 # Vim Object
 
 ```
