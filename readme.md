@@ -173,8 +173,8 @@ Download the cheat sheet from <http://coolshell.cn/articles/5479.html>
 ## *{Leader}*?
 |     Key    |  Function |
 |:----------:|:----------|
-| ,b | Open a window listing all buffers (Plugin: buffergator)
-| ,B | Close the buffer catalog (Plugin: buffergator)
+| ,bb | Open a window listing all buffers (Plugin: buffergator)
+| ,B | Close the buffer catalog (Plugin: buffergator) ---- Disabled
 | ,n | Toggle NERDTree |
 | ,r | Quick run current file (plugin: quickrun) |
 | ,w | Fast saving, same as :w!<CR> |
@@ -232,9 +232,9 @@ Download the cheat sheet from <http://coolshell.cn/articles/5479.html>
 ## Buffer
 |     Key    |  Function |
 |:----------:|:----------|
-| ,b | Open a window listing all buffers (Plugin: buffergator)
-| ,B | Close the buffer catalog (Plugin: buffergator)
-| ,bb | Create new buffer |
+| ,bb | Open a window listing all buffers (Plugin: buffergator)
+| ,B | Close the buffer catalog (Plugin: buffergator)  --- Disabled
+| ,bb | Create new buffer | --- Disabled
 | ,bn | Go to next buffer |
 | ,bp | Go to previous buffer |
 
