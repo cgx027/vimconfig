@@ -41,6 +41,10 @@ npm install -g esctags
 ```
 pip install pylint      # you need install python first
 ```
+- reactjs
+npm install -g eslint
+npm install -g babel-eslint
+npm install -g eslint-plugin-react
 
 6.Compile YouCompleteMe
 

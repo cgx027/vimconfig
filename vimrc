@@ -112,6 +112,10 @@ Plugin 'autoclose'
 " Add semicolon at the end of the line using ,; key
 Plugin 'lfilho/cosco.vim'
 
+" Add support for reactjs
+Plugin 'mxw/vim-jsx'
+Plugin 'justinj/vim-react-snippets'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -1147,6 +1151,13 @@ let g:auto_comma_or_semicolon = 0     " Default : 0
 " nmap <F9> :call AutoCommaOrSemiColon()<CR>
 nmap <silent> <Leader>; <Plug>(cosco-commaOrSemiColon)
 imap <silent> <Leader>; <c-o><Plug>(cosco-commaOrSemiColon)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin: vim-jsx
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:syntastic_javascript_checkers = ['eslint']
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
