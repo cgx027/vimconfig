@@ -461,6 +461,9 @@ map Y y$
 " Select block
 nnoremap <leader>v V`}
 
+" Select whole document
+map <C-a> <esc>ggVG
+
 " Press w!! to sudo & write a file
 cmap w!! w !sudo tee % > /dev/null
 
