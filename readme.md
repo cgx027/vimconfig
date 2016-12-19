@@ -46,6 +46,9 @@ npm install -g eslint
 npm install -g babel-eslint
 npm install -g eslint-plugin-react
 
+- vue.js
+npm install eslint-plugin-vue -g
+
 6.Compile YouCompleteMe
 
 Follows the guide in <http://valloric.github.io/YouCompleteMe/>, this will take very long time (around 1 hour in my PC). For short, the steps for setting up javascript auto completion are:
@@ -688,4 +691,5 @@ You will be all set after restart putty.
 * [amix/vimrc](https://github.com/amix/vimrc)
 * [k-vim](https://github.com/wklken/k-vim)
 * [Things About Vim I Wish I Knew Earlier](https://blog.petrzemek.net/2016/04/06/things-about-vim-i-wish-i-knew-earlier/) [中文译文](http://blog.jobbole.com/103343/)
+* [vim-frontend](http://harttle.com/2015/11/22/vim-frontend.html)
 

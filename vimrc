@@ -116,6 +116,16 @@ Plugin 'lfilho/cosco.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'justinj/vim-react-snippets'
 
+" Add support for reactjs
+Plugin 'posva/vim-vue'
+
+" HTML/CSS support
+Plugin 'mattn/emmet-vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'groenewege/vim-less'
+Plugin 'Raimondi/delimitMate'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -1158,6 +1168,10 @@ imap <silent> <Leader>; <c-o><Plug>(cosco-commaOrSemiColon)
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:syntastic_javascript_checkers = ['eslint']
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin: vim-javascript
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let javascript_enable_domhtmlcss = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
