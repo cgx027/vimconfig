@@ -275,6 +275,8 @@ set nowrap
 set number          " show line numbers
 set relativenumber  " show relative numbers
 
+map <leader>cp :set number!<CR>:set relativenumber!<CR>
+
 " highlight current line
 set cursorline
 
