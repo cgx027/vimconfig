@@ -181,6 +181,7 @@ Download the cheat sheet from <http://coolshell.cn/articles/5479.html>
 |     Key    |  Function |
 |:----------:|:----------|
 | ,bb | Open a window listing all buffers (Plugin: buffergator)
+| ,cp | toggle on/off numbers on the left
 | ,B | Close the buffer catalog (Plugin: buffergator) ---- Disabled
 | ,n | Toggle NERDTree |
 | ,r | Quick run current file (plugin: quickrun) |
