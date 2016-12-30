@@ -116,7 +116,7 @@ Plugin 'lfilho/cosco.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'justinj/vim-react-snippets'
 
-" Add support for reactjs
+" Add support for vuejs
 Plugin 'posva/vim-vue'
 
 " HTML/CSS support
