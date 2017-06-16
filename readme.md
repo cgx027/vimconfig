@@ -365,6 +365,9 @@ Plugin 'powerman/vim-plugin-AnsiEsc'
 | s | Open the file in horizontal split window |
 | v | Open the file in vertical split window |
 
+### Rope for python refactor and auto complete and definition
+https://github.com/python-rope/rope
+
 ### User Guide
 - (Chinese) <http://www.jianshu.com/p/eXMxGx>
 

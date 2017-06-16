@@ -72,6 +72,7 @@ Plugin 'honza/vim-snippets'
 
 " Common plugins for source codes
 Plugin 'scrooloose/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tComment'
@@ -81,6 +82,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar'
+Plugin 'python-rope/ropevim'
 Plugin 'thinca/vim-quickrun'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -330,12 +332,12 @@ autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>:cw<CR>
 " => File encoding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Try following encoding in following defined order in auto mode
-set fileencodings=utf-8,gbk,utf-16,big5,latin1
+set fileencodings=utf-8,gbk,utf-16,big5,latin1,gb18030
 set fileencoding=utf-8
 
 " Set new file's encoding
 set encoding=utf-8
-set termencoding=
+let &termencoding=&encoding
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -871,8 +873,10 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
 let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=235
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=235
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#222222   ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#222222 ctermbg=235
 
 :noremap <F11> :IndentGuidesToggle<CR>:set number!<CR>
 
@@ -950,6 +954,8 @@ nnoremap <leader>gd :Gdiff<CR>
 let g:tagbar_iconchars = ['▸', '▾']
 let g:tagbar_foldlevel = 4
 
+"Tagbar at left
+let g:tagbar_left = 1
 " let g:tagbar_type_javascript = {
 "             \ 'ctagsbin': 'jsctags'
 "             \}
@@ -983,6 +989,15 @@ let g:tagbar_type_javascript = {
 nmap <F2> :TagbarToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin: ropevim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let ropevim_vim_completion=1
+let ropevim_extended_complete=1
+" add the name of modules you want to autoimport
+let g:ropevim_autoimport_modules = ["os", "shutil"]
+noremap <leader>rr :fall RopeGotoDefinition()<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin: Syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_javascript_checkers = ['jshint']
@@ -991,7 +1006,7 @@ let g:syntastic_javascript_jshint_args = "-c ~/.jshintrc"
 let g:syntastic_json_checkers = ['jsonlint']
 
 let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_python_pylint_args = "-c ~/.pylintrc"
+let g:syntastic_python_pylint_args = "--rcfile ~/.pylintrc"
 
 let g:syntastic_sh_checkers = ['bashate']
 
